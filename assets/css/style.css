@@ -8,68 +8,86 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: ubuntu;
-    src: url();
-}
-
-:root {
-    --main-font: ubuntu;
-    --main-font-color: #957554;
-    --main-font-color_light: #fff;
-    --background-color: #DFAA5B;
-}
-
 body {
-    max-width: 992px;
+    height: 120vh;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
 }
-
-/*######################################
-                HEADER
-######################################*/
-
-
-
 
 /*######################################
                 MAIN
 ######################################*/
 
-/* #grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
-    
+form {
+    text-align: center;
+    margin-top: 5vh;
 }
-section:nth-of-type(2) div:nth-of-type(1) {
-    grid-area: div;
-} */
 
+form input[type="text"] {
+    border: 0.5px solid #8BC6EC;
+    background-color: whitesmoke;
+    border-radius:16px ;
+    padding: 12px;
+    width: 35vw;
+}
 
+form input[type="button"] {
+    padding: 9px 18px;
+    margin-left: 12px;
+    border-radius:16px ;
+    border: none;
+    background-color: whitesmoke;
+    border: 0.5px solid #8BC6EC;
+}
+
+section:nth-of-type(1) span {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+section:nth-of-type(1) img {
+    width: 50vw;
+    padding: 5vh 10vw;
+}
+
+section:nth-of-type(1) > p {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+section {
+    background-color: whitesmoke;
+    width: 50vw;
+    border-radius: 20px;
+    margin: 5vh auto;
+}
+
+/* WETTER DATEN */
 
 section article {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
+    padding:1vh 5vw 5vh 5vw;
 }
 
 section div  {
     display: flex;
-    border: 1px solid blue;
-    
+    padding: 10px 0;
 }
 
 section div p {
     width: 300px;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 5px;
 }
 
-
-
-
-
-
-/*######################################
-                FOOTER
-######################################*/
+section div p:nth-of-type(2) {
+    text-align: right;
+}
