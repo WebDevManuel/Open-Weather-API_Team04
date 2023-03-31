@@ -36,6 +36,32 @@ body {
                 MAIN
 ######################################*/
 
+/* #grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    
+}
+section:nth-of-type(2) div:nth-of-type(1) {
+    grid-area: div;
+} */
+
+section {
+    display: flex;
+    
+}
+
+section div div {
+    border: 1px solid red;
+    display: flex;
+}
+
+section div p {
+    border: 1px solid blue;
+    width: 150px;
+}
+
 
 
 

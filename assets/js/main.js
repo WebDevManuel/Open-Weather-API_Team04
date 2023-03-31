@@ -1,4 +1,6 @@
 const sectionWeather = document.querySelector('section')
+// const gridContainer = document.getElementById('grid-container');
+
 console.log(sectionWeather);
 
 fetch("https://api.openweathermap.org/data/2.5/weather?q=berlin&units=metric&appid=bf554b52319262426cae35c841f60ca5")
@@ -21,18 +23,22 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=berlin&units=metric&app
         console.log(today.getHours());
         console.log(today.getMinutes());
 
-
-        sectionWeather.innerHTML += `
-        <div>
-        <h1>Weather in Berlin, GER</h1>
-        <div>
-
-        <p>Broken clouds</p>
-        </div>
-        <p>${data.name}</p>
         
-        <p>${data.sys.sunrise}</p>
-        <p>${data.sys.sunset}</p>
-        </div>
+        const div = document.createElement('div');
+        sectionWeather.appendChild(div);
+        
+        div.innerHTML += `
+        <div><p>Sunrise:</p><p>${data.sys.sunrise}</p></div>
         `
+        div.innerHTML += `
+        <div><p>Sunrise:</p><p>${data.sys.sunrise}</p></div>
+        `
+        div.innerHTML += `
+        <div><p>Sunrise:</p><p>${data.sys.sunrise}</p></div>
+        `
+        div.innerHTML += `
+        <div><p>Sunrise:</p><p>${data.sys.sunrise}</p></div>
+        `
+        
+        
     })
